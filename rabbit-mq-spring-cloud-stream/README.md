@@ -59,8 +59,8 @@
 
 - `@EnableBindings` to the above created class in `ANY` class
 
-    ```// Mulitple class can be given
-    @EnableBinding({ PreferredExchangeNameSink.class})```
+        // Mulitple class can be given
+        @EnableBinding({ PreferredExchangeNameSink.class})
 
 - To publish a message into a queue and to read from a queue.
 

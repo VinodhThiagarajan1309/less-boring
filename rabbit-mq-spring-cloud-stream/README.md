@@ -64,9 +64,9 @@
 
 - To publish a message into a queue and to read from a queue.
 
-   	@Autowired
+        @Autowired
         CustomSource customSource;
-    
+        
         public static void main(String[] args) {
             SpringApplication.run(LoggingConsumerApplication.class, args);
         }

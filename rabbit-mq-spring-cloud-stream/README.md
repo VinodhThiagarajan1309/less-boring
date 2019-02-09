@@ -59,12 +59,12 @@
 
 - `@EnableBindings` to the above created class in `ANY` class
 
-    // Mulitple class can be given
-    @EnableBinding({ PreferredExchangeNameSink.class})
+    ```// Mulitple class can be given
+    @EnableBinding({ PreferredExchangeNameSink.class})```
 
 - To publish a message into a queue and to read from a queue.
 
-    	```	@Autowired
+   	@Autowired
         CustomSource customSource;
     
         public static void main(String[] args) {
@@ -81,7 +81,7 @@
            customSource.output().send(MessageBuilder.withPayload(foodOrder).build());
     
     
-        }```
+        }
 
 - To test the published message,
     1. Create a queue in the format of `<EXCHANGE_NAME>.<QUEUE_NAME_OF_YOUR_CHOICE` . In the above example `.destination` defines the exchange name which is in our case `exchangeName`.
